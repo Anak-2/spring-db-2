@@ -1,14 +1,13 @@
-package study.springtx.service;
+package study.springtx.txsynch.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.datasource.DataSourceUtils;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
-import study.springtx.repository.MemberRepository;
-import study.springtx.repository.MessageRepository;
+import study.springtx.txsynch.repository.MemberRepository;
+import study.springtx.txsynch.repository.MessageRepository;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 
 @RequiredArgsConstructor

@@ -1,4 +1,4 @@
-package study.springtx.repository;
+package study.springtx.txsynch.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

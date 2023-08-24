@@ -1,4 +1,4 @@
-package study.springtx.domain;
+package study.springtx.txsynch.domain;
 
 import lombok.Data;
 
