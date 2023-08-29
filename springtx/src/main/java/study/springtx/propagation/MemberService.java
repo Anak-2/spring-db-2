@@ -43,9 +43,19 @@ public class MemberService {
         memberRepository.save(member);
         try{
             logRepository.save(log1);
-        }catch(RuntimeException e){
+        }catch(Exception e){
             log.info("log 저장에 실패했습니다. log.username={}", log1.getMessage());
             log.info("정상 흐름 반환");
         }
+
+
+    }
+
+    // Log 트랜잭션과 완전히 분리
+    @Transactional
+    public void joinV4(String username){
+        Member member = new Member(username);
+
+        memberRepository.save(member);
     }
 }

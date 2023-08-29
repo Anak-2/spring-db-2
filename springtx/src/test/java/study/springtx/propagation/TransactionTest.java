@@ -114,4 +114,5 @@ public class TransactionTest {
         log.info("외부 트랜잭션 커밋");
         txManager.commit(outer);
     }
+
 }
